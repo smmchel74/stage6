@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/404.css' %}">
+    <title>404 - Страница не найдена</title>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="{% static 'img/404.png' %}" alt="Error Icon">
+        <h1 class="handler-title">404</h1>
+        <p class="handler-subtitle">"404 - Не удалось завершить цепь запроса. Страница потерялась в бескрайних битах и байтах."</p>
+        <a class="handler-back-btn" href="{% url 'shop:home' %}">Вернись домой!</a>
+    </div>
+</body>
+</html>
